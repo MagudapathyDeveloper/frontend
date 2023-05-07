@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #001eff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #ff0033;
+  padding: 20px;
+  width: 40%;
+  font-weight: bold;
+  float: right;
+}
+h1{
+
+    margin-left: 850px;
+}
+img {
+    width: 56%;
+    height: 60%;
+    float: left;
+}
+.num{
+  width: 460px;
+  height: 40px;
+  border-radius: 3px;
+}
+</style>
+</head>
+<body>
+
+<h1>Get a Quote</h1>
+<img src="http://www.posmc.com/wp-content/uploads/2016/04/Contact-us.jpg" alt="">
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Naveen..">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Kumar..">
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="australia">South Africa</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="india">INDIA</option>
+    </select>
+    <label for="phone"> Mobile Number:</label><br><br>
+   <input type="number" name="Magu" class="num"><br><br>
+
+    <label for="subject">Address:</label>
+    <textarea id="subject" name="subject" placeholder="Fill Your Address.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
